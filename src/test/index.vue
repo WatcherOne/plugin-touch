@@ -5,11 +5,12 @@
     <div class="test"
       v-tap="(e) => swipeleft(1)"
       v-longTap="(e) => swipeleft(2)"
-      v-swipe="(e) => swipeleft(3)"
+      v-swipe="(e, dis) => swipeleft(3, e, dis)"
       v-swipeup="(e) => swipeleft(4)"
-      v-swipedown="(e) => swipeleft(5)"
-      v-swipeleft="(e) => swipeleft(6)"
-      v-swiperight="(e) => swipeleft(7)"></div>
+      v-swipedown="(e, dis) => swipeleft(5, e, dis)"
+      v-swipeleft="(e, dis) => swipeleft(6, e, dis)"
+      v-swiperight="(e) => swipeleft(7)"
+      v-swiping="(e, dis) => swipeleft(8, e, dis)"></div>
   </div>
 </template>
 
@@ -21,8 +22,8 @@ export default {
   setup() {
     const data = ref()
 
-    const swipeleft = (type) => {
-      console.log(type)
+    const swipeleft = (type, e, dis) => {
+      console.log(type, dis)
       switch(type) {
         case 1: data.value = '点击'; break;
         case 2: data.value = '长按'; break;
@@ -31,6 +32,7 @@ export default {
         case 5: data.value = '下'; break;
         case 6: data.value = '左'; break;
         case 7: data.value = '右'; break;
+        case 8: data.value = '滑动'; break;
         default: break;
       }
     }
