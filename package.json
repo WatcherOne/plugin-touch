@@ -1,10 +1,10 @@
 {
-  "name": "v-touch",
+  "name": "shi-touch",
   "description": "A Vue's plugin of v-touch",
   "version": "1.0.0",
   "author": "zhubo <286154864@qq.com>",
   "license": "MIT",
-  "main": "dist/hoverText.js",
+  "main": "dist/touch.js",
   "scripts": {
     "dist": "webpack --config vue.dist.config.js",
     "serve": "vue-cli-service serve",
