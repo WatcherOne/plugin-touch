@@ -1,7 +1,7 @@
 {
   "name": "shi-touch",
   "description": "A Vue's plugin of v-touch",
-  "version": "2.0.0",
+  "version": "2.5.0",
   "author": "zhubo <286154864@qq.com>",
   "license": "MIT",
   "main": "dist/touch.js",
