@@ -1,4 +1,9 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import App from './test/index'
+import swipe from './plugin/touch'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.use(swipe)
+
+app.mount('#app')

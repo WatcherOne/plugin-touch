@@ -1,8 +1,12 @@
 {
-  "name": "plugin-v-slide",
-  "version": "0.1.0",
-  "private": true,
+  "name": "v-touch",
+  "description": "A Vue's plugin of v-touch",
+  "version": "1.0.0",
+  "author": "zhubo <286154864@qq.com>",
+  "license": "MIT",
+  "main": "dist/hoverText.js",
   "scripts": {
+    "dist": "webpack --config vue.dist.config.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -18,7 +22,8 @@
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint-plugin-vue": "^7.0.0",
+    "webpack-cli": "^4.6.0"
   },
   "eslintConfig": {
     "root": true,
