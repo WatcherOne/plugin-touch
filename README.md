@@ -33,9 +33,13 @@ npm run dist ==== 生成打包的JS文件, 直接引入即可
 ### extra
 
 npm run build ---- vue-cli 打包项目
+
 npm run dev   ---- 启动项目
+
 npm run dist  ---- webpack-cli 打包插件生成JS文件 - 根据 vue.dist.config.js 配置来生成
+    
     package.json -- main.js  // 决定 import xxx from “vue-plugin” 它默认就会去找 dist下的 JS 文件
 
 npm login   --- 登录 npm 插件库 输入 用户 密码
+
 npm publish --- 发布插件
